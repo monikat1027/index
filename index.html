@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Module 6 Demonstration</title>
+<link rel="stylesheet" type="text/css" href="css/Assignment6.css" />
+<script src="js/Assingment6.js"></script>
+</head>
+
+<body>
+<h1>Module 6 Demonstration</h1>
+<hr>
+<br>
+<select onchange="ShowMe()" id="selectsec">
+    <option selected=selected value="0">Please Select an Option</option>
+    <option value="1">Create Customer</option>
+    <option value="2">Delete Customer</option>
+    <option value="3">Update Shipping Address</option>
+</select>
+<hr>
+<br>
+
+<section id="createsec" style="visibility:hidden">
+<label>Please Enter a Customer ID: </label>
+<input type="text" id="custid">
+<label class="example"> The customer ID should be 5 uppercase text characters.</label>
+<br>
+<label>Please enter the Customer Name: </label>
+<input type="text" id="custname">
+<br>
+<button onclick="CreateCustomer()" id="newcust">Add a New Customer</button>
+<br>
+<br>
+<label id="result">The operation's result will display here.</label>
+</section>
+
+<section id="deletesec" style="visibility:hidden">
+    <hr>
+    <br>
+    <label>Please Enter a Customer ID: </label>
+<input type="text" id="delcustid">
+<label class="example"> The customer ID should be 5 uppercase text characters.</label>
+<br>
+<button onclick="DeleteCustomer()" id="delcust">Delete Customer</button>
+<br>
+<br>
+<label id="resultdel">The operation's result will display here.</label>
+</section>
+
+<section id="updatesec" style="visibility:hidden">
+    <hr>
+    <br>
+<label>Please Enter a Order Number: </label>
+<input type="text" id="ordernum">
+<label class="example"> The Order Number should be 5 numeric characters.</label>
+<br>
+<br>
+<label>Please Enter a Shipping Name:</label>
+<input type="text" id="shipname">
+<br>
+<br>
+<label>Please Enter a Shipping Address:</label>
+<input type="text" id="shipaddress">
+<br>
+<br>
+<label>Please Enter a Shipping City:</label>
+<input type="text" id="shipcity">
+<br>
+<br>
+<label>Please Enter a Shipping Postal Code:</label>
+<input type="text" id="shippostcode">
+<br>
+<br>
+<button onclick="UpdateAddress()" id="updatecust">Update Customer Address</button>
+<br>
+<br>
+<label id="resultupdate">The operation's result will display here.</label>
+</section>
+
+</body>
+</html>
